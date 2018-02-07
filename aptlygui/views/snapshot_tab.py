@@ -4,8 +4,9 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QStandardItem, QStandardItemModel
 from PyQt5.QtWidgets import (QComboBox, QGridLayout, QFormLayout, QPushButton, QWidget, QListView, QAbstractItemView, QVBoxLayout, QCheckBox, QLabel)
 
-from aptlygui.views.list_tab import ListTab
+from aptlygui.widgets.list_tab import ListTab
 from aptlygui.views.wait_dialog import WaitDialog
+
 
 class SnapshotTab(ListTab):
     def __init__(self, data_manager, parent=None):

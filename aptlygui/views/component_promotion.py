@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import (QComboBox, QGridLayout, QLabel, QPushButton, QWidge
 
 from aptly.publisher import Publish
 from aptlygui.views.wait_dialog import WaitDialog
-from aptlygui.views.list_tab import ListTab
+from aptlygui.widgets.list_tab import ListTab
 
 
 class ComponentPromotion(ListTab):
@@ -17,7 +17,6 @@ class ComponentPromotion(ListTab):
         self.source_publish_box = QComboBox()
         self.target_publish_box = QComboBox()
         publish_button = self.create_button("Promote", self.update_publish)
-
 
         self.add_form_element("Source publish", self.source_publish_box)
         self.add_form_element("Target publish", self.target_publish_box)

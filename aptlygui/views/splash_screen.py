@@ -14,7 +14,7 @@ class SplashScreen(QDialog):
         self.layout = QGridLayout()
         self.progressBar = QCustomProgressBar(self)
         self.urlLabel = QLabel("URL of Aptly :")
-        self.urlEdit = QLineEdit("http://127.0.0.1:8089")
+        self.urlEdit = QLineEdit("http://127.0.0.1:8084")
         self.loadButton = QPushButton("Connect to aptly")
         self.loadButton.setDefault(True)
         self.quitButton = QPushButton("Quit")
